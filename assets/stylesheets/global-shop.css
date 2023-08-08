@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-roboto-serif: "Roboto Serif";
+
+  /* font sizes */
+  --font-size-5xl: 24px;
+  --font-size-29xl: 48px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-linen: #ece6dd;
+  --color-black: #000;
+  --color-silver: #c7b0a6;
+
+  /* Paddings */
+  --padding-3xs: 10px;
+}

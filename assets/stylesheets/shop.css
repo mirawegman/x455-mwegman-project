@@ -1,0 +1,578 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+  margin: 0;
+}
+.shop-1-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1465px;
+  height: 347px;
+  object-fit: cover;
+}
+.dog-shop1 {
+  position: absolute;
+  top: 13px;
+  left: 0;
+}
+.dog-shop-image-frame,
+.dog-shop-text-frame {
+  position: absolute;
+  top: 120px;
+  left: 60px;
+  width: 408px;
+  height: 100px;
+  overflow: hidden;
+}
+.dog-shop-image-frame {
+  top: 196px;
+  left: 0;
+  width: 1440px;
+  height: 341px;
+  font-size: 64px;
+  color: var(--color-white);
+}
+.toys {
+  position: absolute;
+  top: 22px;
+  left: 37px;
+}
+.preview {
+  width: 100%;
+}
+.row {
+  position: absolute;
+  left: 40px;
+  top: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.row > .column {
+  padding: 0 8px;
+}
+.column {
+  float: left;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 320px;
+  margin: 5px;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding: 10px 62px 0px 62px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+.moda-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  padding: 0 0 0 0;
+  width: 80%;
+  max-width: 1200px;
+}
+.slide {
+  display: none;
+}
+.image-slide {
+  width: 100%;
+}
+.modal-preview {
+  width: 100%;
+}
+.dots {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+img.preview, img.modal-preview {
+  opacity: 1;
+}
+img.active, 
+.preview:hover,
+.modal-preview:hover {
+  opacity: 0.6;
+}
+img.hover-shadow {
+  transition: 0.3s;
+}
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+.previous,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.previous:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.toys-frame,
+.treats-frame {
+  position: absolute;
+  top: 610px;
+  left: 36px;
+  background-color: var(--color-silver);
+  width: 371px;
+  height: 100px;
+  overflow: hidden;
+}
+.treats-frame {
+  top: 1222px;
+}
+
+.icon-instagram {
+  position: absolute;
+  top: 1106px;
+  left: 840px;
+  width: 409px;
+  height: 361px;
+  overflow: hidden;
+}
+.icon-instagram {
+  height: 19.98%;
+  width: 17.56%;
+  top: 63.93%;
+  right: 7.5%;
+  bottom: 16.09%;
+  left: 74.95%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.info,
+.info-frame {
+  position: absolute;
+  top: 6px;
+  left: 23px;
+}
+.info-frame {
+  top: 179px;
+  left: 531px;
+  width: 95px;
+  height: 39px;
+  overflow: hidden;
+}
+.support,
+.support-frame {
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+.support-frame {
+  top: 186px;
+  left: 616px;
+  width: 116px;
+  height: 26px;
+  overflow: hidden;
+}
+.marketing,
+.marketing-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.marketing-frame {
+  top: 187px;
+  left: 740px;
+  width: 123px;
+  height: 31px;
+  overflow: hidden;
+}
+.terms-of-use {
+  position: absolute;
+  top: 5px;
+  left: 33px;
+}
+.term-of-use-frame {
+  position: absolute;
+  top: 226px;
+  left: 505px;
+  width: 196px;
+  height: 38px;
+  overflow: hidden;
+}
+.privacy-frame,
+.privacy-policy {
+  position: absolute;
+  top: 1px;
+  left: 8px;
+}
+.privacy-frame {
+  top: 230px;
+  left: 701px;
+  width: 183px;
+  height: 30px;
+  overflow: hidden;
+}
+.email-frame,
+.enter-your-email {
+  position: absolute;
+  top: 12px;
+  left: 8px;
+}
+.email-frame {
+  top: 87px;
+  left: 980px;
+  background-color: transparent;
+  border: 2px solid var(--color-white);
+  box-sizing: border-box;
+  width: 277px;
+  height: 51px;
+  overflow: hidden;
+}
+.subscribe,
+.subscribe-frame {
+  position: absolute;
+  top: 12px;
+  left: 17px;
+}
+.subscribe-frame {
+  top: 87px;
+  left: 1255px;
+  border: 2px solid var(--color-white);
+  box-sizing: border-box;
+  width: 150px;
+  height: 51px;
+  overflow: hidden;
+}
+.get-the-latest {
+  position: absolute;
+  top: 30px;
+  left: 38px;
+}
+.logo-icon,
+.news-frame {
+  position: absolute;
+  overflow: hidden;
+}
+.news-frame {
+  top: 7px;
+  left: 962px;
+  width: 433px;
+  height: 67px;
+  font-size: 32px;
+}
+.logo-icon {
+  top: 21px;
+  left: 12px;
+  width: 110px;
+  height: 103px;
+}
+.puphub,
+.puphub-frame {
+  position: absolute;
+  top: 8px;
+  left: 0;
+}
+.puphub-frame {
+  top: 45px;
+  left: 120px;
+  width: 214px;
+  height: 55px;
+  overflow: hidden;
+  font-size: 40px;
+}
+.contact-us {
+  position: absolute;
+  top: 3px;
+  left: 10px;
+}
+.contact-us-frame {
+  position: absolute;
+  top: 124px;
+  left: 51px;
+  width: 149px;
+  height: 33px;
+  overflow: hidden;
+}
+.faq,
+.faq-frame {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+}
+.faq-frame {
+  top: 157px;
+  left: 49px;
+  width: 89px;
+  height: 33px;
+  overflow: hidden;
+}
+.accessibility {
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+.accessibility-frame,
+.footer-frame {
+  position: absolute;
+  top: 194px;
+  left: 64px;
+  width: 165px;
+  height: 47px;
+  overflow: hidden;
+}
+.footer-frame {
+  top: 2725px;
+  left: -1px;
+  background-color: #dad2cd;
+  width: 1441px;
+  height: 280px;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+}
+.screen-shot-2023-07-11-at-125 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 338px;
+  height: 297px;
+  object-fit: cover;
+}
+.greenies-frame {
+  position: absolute;
+  top: 1759px;
+  left: 81px;
+  width: 341px;
+  height: 297px;
+  overflow: hidden;
+}
+.screen-shot-2023-07-11-at-126 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 269px;
+  height: 293px;
+  object-fit: cover;
+}
+.treat-2-frame {
+  position: absolute;
+  top: 1759px;
+  left: 516px;
+  width: 275px;
+  height: 297px;
+  overflow: hidden;
+}
+.screen-shot-2023-07-11-at-130 {
+  position: absolute;
+  top: 17px;
+  left: 36px;
+  width: 227px;
+  height: 329px;
+  object-fit: cover;
+}
+.treat-3-frames {
+  position: absolute;
+  top: 1722px;
+  left: 885px;
+  width: 355px;
+  height: 362px;
+  overflow: hidden;
+}
+.screen-shot-2023-07-11-at-132 {
+  position: absolute;
+  top: 14px;
+  left: 21px;
+  width: 279px;
+  height: 369px;
+  object-fit: cover;
+}
+.treat-4frame {
+  position: absolute;
+  top: 2149px;
+  left: 86px;
+  width: 321px;
+  height: 398px;
+  overflow: hidden;
+}
+.screen-shot-2023-07-11-at-135 {
+  position: absolute;
+  top: 6px;
+  left: 53px;
+  width: 247px;
+  height: 358px;
+  object-fit: cover;
+}
+.treat-5-frame {
+  position: absolute;
+  top: 2165px;
+  left: 487px;
+  width: 353px;
+  height: 364px;
+  overflow: hidden;
+}
+.screen-shot-2023-07-11-at-137 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 309px;
+  height: 324px;
+  object-fit: cover;
+}
+.treat-6-frame {
+  position: absolute;
+  top: 2198px;
+  left: 885px;
+  width: 378px;
+  height: 372px;
+  overflow: hidden;
+}
+.logo-icon1 {
+  position: relative;
+  width: 146px;
+  height: 136px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.dog-blog {
+  list-style: none;
+  text-decoration: none;
+  position: absolute;
+  top: 12px;
+  left: 32px;
+}
+.dog-blog-frame {
+  position: relative;
+  background-color: var(--color-linen);
+  width: 169px;
+  height: 53px;
+  overflow: hidden;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.breeds {
+  list-style: none;
+  position: absolute;
+  top: 12px;
+  left: 44px;
+}
+.breeds-frame {
+  position: relative;
+  background-color: var(--color-linen);
+  width: 168px;
+  height: 53px;
+  overflow: hidden;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.food,
+.health,
+.shop {
+  list-style: none;
+  position: absolute;
+  top: 12px;
+  left: 55px;
+}
+.health,
+.shop {
+  left: 45px;
+}
+.shop {
+  left: 54px;
+}
+.shop-frame {
+  position: relative;
+  background-color: var(--color-linen);
+  width: 169px;
+  height: 52px;
+  overflow: hidden;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.search-bar-white {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  border-radius: 24px;
+  background-color: var(--color-white);
+  width: 293px;
+  height: 48px;
+}
+.search {
+  position: absolute;
+  top: 10px;
+  left: 57px;
+}
+.search-rectangle {
+  position: relative;
+  width: 343px;
+  height: 52px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.nav-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-linen);
+  width: 1440px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: 12px 18px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 11px;
+  font-size: var(--font-size-5xl);
+}
+.dog-shop {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 3005px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-29xl);
+  color: var(--color-black);
+  font-family: var(--font-roboto-serif);
+}

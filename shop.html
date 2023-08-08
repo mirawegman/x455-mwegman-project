@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./assets/stylesheets/global-shop.css" />
+    <link rel="stylesheet" href="./assets/stylesheets/shop.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto Serif:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="dog-shop">
+      <div class="dog-shop-image-frame">
+        <img class="shop-1-icon" alt="" src="./assets/images/shop-1@2x.png" />
+
+        <div class="dog-shop-text-frame">
+          <div class="dog-shop1">Dog Shop</div>
+        </div>
+      </div> 
+      <div class="toys-frame">
+        <div class="toys">Toys</div>
+      </div>
+      <div class="treats-frame">
+        <div class="toys">Treats</div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+            <img src="./assets/images/bear-01.png" onclick="openLightbox();toSlide(1)" class="hover-shadow preview" style="width: 300px;" />
+        </div>
+        <div class="column">
+            <img src="./assets/images/ball-01.png" onclick="openLightbox();toSlide(2)" class="hover-shadow preview" style="width: 300px;" />
+        </div>
+        <div class="column">
+            <img src="./assets/images/dragon-01.png" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" style="width: 300px;" />
+        </div>
+        <div class="column">
+            <img src="./assets/images/kong-01.png" onclick="openLightbox();toSlide(4)" class="hover-shadow preview" style="width: 300px;" />
+        </div>     
+</div>
+
+<div id="Lightbox" class="modal">
+    <span class="close pointer" onclick="closeLightbox()">&times;</span>
+    <div class="modal-content">
+        <div class="slide">
+            <img src="./assets/images/bear-01.png" class="image-slide" />
+        </div>
+        <div class="slide">
+            <img src="./assets/images/ball-01.png" class="image-slide" />
+        </div>
+        <div class="slide">
+            <img src="./assets/images/dragon-01.png" class="image-slide" />
+        </div>
+        <div class="slide">
+            <img src="./assets/images/kong-01.png" class="image-slide" />
+        </div>
+
+        <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+        <div class="dots">
+            <div class="column">
+                <img src="./assets/images/bear-01.png" class="modal-preview hover-shadow" onclick="toSlide(1)" />
+            </div>
+            <div class="column">
+                <img src="./assets/images/ball-01.png" class="modal-preview hover-shadow" onclick="toSlide(2)" />
+            </div>
+            <div class="column">
+                <img src="./assets/images/dragon-01.png" class="modal-preview hover-shadow" onclick="toSlide(3)" />
+            </div>
+            <div class="column">
+                <img src="./assets/images/kong-01.png" class="modal-preview hover-shadow" onclick="toSlide(4)" />
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="footer-frame">
+        <img class="icon-instagram" alt="" src="./assets/images/-icon-instagram.svg" />
+
+        <div class="info-frame">
+          <div class="info">Info</div>
+        </div>
+        <div class="support-frame">
+          <div class="support">Support</div>
+        </div>
+        <div class="marketing-frame">
+          <div class="marketing">Marketing</div>
+        </div>
+        <div class="term-of-use-frame">
+          <div class="terms-of-use">Terms Of Use</div>
+        </div>
+        <div class="privacy-frame">
+          <div class="privacy-policy">Privacy Policy</div>
+        </div>
+        <div class="email-frame">
+          <div class="enter-your-email">Enter your email...</div>
+        </div>
+        <div class="subscribe-frame">
+          <div class="subscribe">Subscribe</div>
+        </div>
+        <div class="news-frame">
+          <div class="get-the-latest">Get The Latest Dog News!</div>
+        </div>
+        <img class="logo-icon" alt="" src="./assets/images/logo.svg" />
+
+        <div class="puphub-frame">
+          <div class="puphub">PupHub</div>
+        </div>
+        <div class="contact-us-frame">
+          <div class="contact-us">Contact Us</div>
+        </div>
+        <div class="faq-frame">
+          <div class="faq">FAQ</div>
+        </div>
+        <div class="accessibility-frame">
+          <div class="accessibility">Accessibility</div>
+        </div>
+      </div>
+      <div class="greenies-frame">
+        <img
+          class="screen-shot-2023-07-11-at-125"
+          alt=""
+          src="./assets/images/screen-shot-20230711-at-125-1@2x.png"
+        />
+      </div>
+      <div class="treat-2-frame">
+        <img
+          class="screen-shot-2023-07-11-at-126"
+          alt=""
+          src="./assets/images/screen-shot-20230711-at-126-1@2x.png"
+        />
+      </div>
+      <div class="treat-3-frames">
+        <img
+          class="screen-shot-2023-07-11-at-130"
+          alt=""
+          src="./assets/images/screen-shot-20230711-at-130-1@2x.png"
+        />
+      </div>
+      <div class="treat-4frame">
+        <img
+          class="screen-shot-2023-07-11-at-132"
+          alt=""
+          src="./assets/images/screen-shot-20230711-at-132-1@2x.png"
+        />
+      </div>
+      <div class="treat-5-frame">
+        <img
+          class="screen-shot-2023-07-11-at-135"
+          alt=""
+          src="./assets/images/screen-shot-20230711-at-135-1@2x.png"
+        />
+      </div>
+      <div class="treat-6-frame">
+        <img
+          class="screen-shot-2023-07-11-at-137"
+          alt=""
+          src="./assets/images/screen-shot-20230711-at-137-1@2x.png"
+        />
+      </div> 
+      <div class="nav-bar">
+        <div class="logo-icon1">
+          <a href="splash.html"><img src="./assets/images/logo1.svg" style="width: 146px; height: 136px;"></a>
+        </div>
+        <div class="dog-blog-frame" id="dogBlogFrame">
+          <div class="dog-blog">
+            <li><a href="dog-blog.html">Dog Blog</a></li>
+          </div>
+        </div>
+        <div class="breeds-frame" id="breedsFrameContainer">
+          <div class="breeds">
+            <li><a href="breeds.html">Breeds</a></li>
+          </div>
+        </div>
+        <div class="dog-blog-frame" id="foodFrameContainer">
+          <div class="food">
+            <li><a href="food.html">Food</a></li>
+          </div>
+        </div>
+        <div class="breeds-frame" id="healthFrameContainer">
+          <div class="health">
+            <li><a href="health.html">Health</a></li>
+          </div>
+        </div>
+        <div class="shop-frame" id="shopFrameContainer">
+          <div class="shop">
+            <li><a href="shop.html">Shop</a></li>
+          </div>
+        </div>
+        <div class="search-rectangle">
+          <div class="search-bar-white"></div>
+          <div class="search">Search...</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let slideIndex = 1;
+      showSlide(slideIndex);
+
+      function openLightbox() {
+          document.getElementById('Lightbox').style.display = 'block';
+      }
+      function closeLightbox() {
+          document.getElementById('Lightbox').style.display = 'none';
+      };
+      function changeSlide(n) {
+          showSlide(slideIndex += n);
+      };
+      function toSlide(n) {
+          showSlide(slideIndex = n);
+      };
+      function showSlide(n) {
+          const slides = document.getElementsByClassName('slide');
+          let modalPreviews = document.getElementsByClassName('modal-preview');
+
+          if (n > slides.length) {
+              slideIndex = 1;
+          };
+          if (n < 1) {
+              slideIndex = slides.length;
+          };
+          for (let i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          };
+          for (let i = 0; i < modalPreviews.length; i++) {
+              modalPreviews[i].className = modalPreviews[i].className.replace(' active','' );
+          };
+          slides[slideIndex - 1].style.display = 'block';
+          modalPreviews[slideIndex - 1],className += ' active';
+      };
+  </script>
+  </body>
+</html>
