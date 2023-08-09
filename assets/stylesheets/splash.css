@@ -108,13 +108,13 @@ a {
 .splash-video-1-wrapper {
   position: absolute;
   top: 0;
-  left: -220px;
-  width: 1640px;
+  left: -220px;;
+  width: 1660px;
   height: 843px;
 }
 .splash-video-1-wrapper {
   top: 161px;
-  left: -210px;
+  left: -220px;
   overflow: hidden;
 }
 .splash {

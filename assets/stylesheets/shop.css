@@ -68,6 +68,25 @@ body{
   width: 320px;
   margin: 5px;
 }
+.row2 {
+  position: absolute;
+  left: 40px;
+  top: 1400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.row2 > .column2 {
+  padding: 0 8px;
+}
+.column2 {
+  float: left;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 320px;
+  margin: 5px;
+}
 .modal {
   display: none;
   position: fixed;
@@ -362,109 +381,13 @@ img.hover-shadow {
   overflow: hidden;
 }
 .footer-frame {
-  top: 2725px;
+  top: 2025px;
   left: -1px;
   background-color: #dad2cd;
   width: 1441px;
   height: 280px;
   font-size: var(--font-size-5xl);
   color: var(--color-white);
-}
-.screen-shot-2023-07-11-at-125 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 338px;
-  height: 297px;
-  object-fit: cover;
-}
-.greenies-frame {
-  position: absolute;
-  top: 1759px;
-  left: 81px;
-  width: 341px;
-  height: 297px;
-  overflow: hidden;
-}
-.screen-shot-2023-07-11-at-126 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 269px;
-  height: 293px;
-  object-fit: cover;
-}
-.treat-2-frame {
-  position: absolute;
-  top: 1759px;
-  left: 516px;
-  width: 275px;
-  height: 297px;
-  overflow: hidden;
-}
-.screen-shot-2023-07-11-at-130 {
-  position: absolute;
-  top: 17px;
-  left: 36px;
-  width: 227px;
-  height: 329px;
-  object-fit: cover;
-}
-.treat-3-frames {
-  position: absolute;
-  top: 1722px;
-  left: 885px;
-  width: 355px;
-  height: 362px;
-  overflow: hidden;
-}
-.screen-shot-2023-07-11-at-132 {
-  position: absolute;
-  top: 14px;
-  left: 21px;
-  width: 279px;
-  height: 369px;
-  object-fit: cover;
-}
-.treat-4frame {
-  position: absolute;
-  top: 2149px;
-  left: 86px;
-  width: 321px;
-  height: 398px;
-  overflow: hidden;
-}
-.screen-shot-2023-07-11-at-135 {
-  position: absolute;
-  top: 6px;
-  left: 53px;
-  width: 247px;
-  height: 358px;
-  object-fit: cover;
-}
-.treat-5-frame {
-  position: absolute;
-  top: 2165px;
-  left: 487px;
-  width: 353px;
-  height: 364px;
-  overflow: hidden;
-}
-.screen-shot-2023-07-11-at-137 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 309px;
-  height: 324px;
-  object-fit: cover;
-}
-.treat-6-frame {
-  position: absolute;
-  top: 2198px;
-  left: 885px;
-  width: 378px;
-  height: 372px;
-  overflow: hidden;
 }
 .logo-icon1 {
   position: relative;
@@ -569,7 +492,7 @@ img.hover-shadow {
   position: relative;
   background-color: var(--color-white);
   width: 100%;
-  height: 3005px;
+  height: 2305px;
   overflow: hidden;
   text-align: left;
   font-size: var(--font-size-29xl);

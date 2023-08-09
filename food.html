@@ -1,106 +1,125 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
-    <link rel="stylesheet" href="./assets/stylesheets/global-food.css" />
+<head>
+<title>Sort a HTML Table Alphabetically</title>
+<link rel="stylesheet" href="./assets/stylesheets/global-food.css" />
     <link rel="stylesheet" href="./assets/stylesheets/food.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto Serif:wght@400&display=swap"
     />
-  </head>
-  <body>
-    <div class="food">
-      <div class="footer-frame">
-        <img class="icon-instagram" alt="" src="./assets/images/-icon-instagram.svg" />
-
-        <div class="info-frame">
-          <div class="info">Info</div>
-        </div>
-        <div class="support-frame">
-          <div class="support">Support</div>
-        </div>
-        <div class="marketing-frame">
-          <div class="marketing">Marketing</div>
-        </div>
-        <div class="term-of-use-frame">
-          <div class="terms-of-use">Terms Of Use</div>
-        </div>
-        <div class="privacy-frame">
-          <div class="privacy-policy">Privacy Policy</div>
-        </div>
-        <div class="email-frame">
-          <div class="enter-your-email">Enter your email...</div>
-        </div>
-        <div class="subscribe-frame">
-          <div class="subscribe">Subscribe</div>
-        </div>
-        <div class="news-frame">
-          <div class="get-the-latest">Get The Latest Dog News!</div>
-        </div>
-        <img class="logo-icon" alt="" src="./assets/images/logo.svg" />
-
-        <div class="puphub-frame">
-          <div class="puphub">PupHub</div>
-        </div>
-        <div class="contact-us-frame">
-          <div class="contact-us">Contact Us</div>
-        </div>
-        <div class="faq-frame">
-          <div class="faq">FAQ</div>
-        </div>
-        <div class="accessibility-frame">
-          <div class="accessibility">Accessibility</div>
+<style>
+table#myTable {
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+table#myTable th:nth-child(1),
+table#myTable td:nth-child(1) {
+  width: 40%;  
+}
+table#myTable th:nth-child(2),
+table#myTable td:nth-child(2) {
+  width: 15%;  
+}
+table#myTable th:nth-child(3),
+table#myTable td:nth-child(3) {
+  width: 15%;  
+}
+table#myTable th:nth-child(4),
+table#myTable td:nth-child(4) {
+  width: 15%;  
+}
+table#myTable th:nth-child(5),
+table#myTable td:nth-child(5) {
+  width: 15%;  
+}
+table#myTable thead {
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+table#myTable thead th {
+    color: black;
+    background-color: #dad2cd;
+    padding: 8px;
+}
+table#myTable thead th:hover {
+    color: black;
+    background-color: var(--color-linen);
+    cursor: pointer;
+}
+th, td {
+  text-align: center;
+  padding: 16px;
+}
+table#myTable tbody {
+    font-size: 1em;
+    line-height: 18px;
+}
+table#myTable tbody tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+table#myTable tbody td {
+    padding: 8px 20px;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+</style>
+</head>
+<body>
+  <div class="food">
+    <div class="nav-bar">
+      <div class="logo-icon1">
+        <a href="splash.html"><img src="./assets/images/logo1.svg" style="width: 146px; height: 136px;"></a>
+      </div>
+      <div class="dog-blog-frame" id="dogBlogFrame">
+        <div class="dog-blog">
+          <li><a href="dog-blog.html">Dog Blog</a></li>
         </div>
       </div>
-      <div class="nav-bar">
-        <div class="logo-icon1">
-          <a href="splash.html"><img src="./assets/images/logo1.svg" style="width: 146px; height: 136px;"></a>
-        </div>
-        <div class="dog-blog-frame" id="dogBlogFrame">
-          <div class="dog-blog">
-            <li><a href="dog-blog.html">Dog Blog</a></li>
-          </div>
-        </div>
-        <div class="breeds-frame" id="breedsFrameContainer">
-          <div class="breeds">
-            <li><a href="breeds.html">Breeds</a></li>
-          </div>
-        </div>
-        <div class="dog-blog-frame" id="foodFrameContainer">
-          <div class="food1">
-            <li><a href="food.html">Food</a></li>
-          </div>
-        </div>
-        <div class="breeds-frame" id="healthFrameContainer">
-          <div class="health">
-            <li><a href="health.html">Health</a></li>
-          </div>
-        </div>
-        <div class="shop-frame" id="shopFrameContainer">
-          <div class="shop">
-            <li><a href="shop.html">Shop</a></li>
-          </div>
-        </div>
-        <div class="search-rectangle">
-          <div class="search-bar-white"></div>
-          <div class="search">Search...</div>
+      <div class="breeds-frame" id="breedsFrameContainer">
+        <div class="breeds">
+          <li><a href="breeds.html">Breeds</a></li>
         </div>
       </div>
-      <div class="food-1-parent">
-        <img class="food-1-icon" alt="" src="./assets/images/food-1@2x.png" />
+      <div class="dog-blog-frame" id="foodFrameContainer">
+        <div class="food1">
+          <li><a href="food.html">Food</a></li>
+        </div>
+      </div>
+      <div class="breeds-frame" id="healthFrameContainer">
+        <div class="health">
+          <li><a href="health.html">Health</a></li>
+        </div>
+      </div>
+      <div class="shop-frame" id="shopFrameContainer">
+        <div class="shop">
+          <li><a href="shop.html">Shop</a></li>
+        </div>
+      </div>
+      <div class="search-rectangle">
+        <div class="search-bar-white"></div>
+        <div class="search">Search...</div>
+      </div>
+    </div>
+    <div class="food-1-parent">
+      <img class="food-1-icon" alt="" src="./assets/images/food-1@2x.png" />
 
-        <div class="choosing-the-right">Choosing The Right Chow</div>
-      </div>  
-      <table>
+      <div class="choosing-the-right">Choosing The Right Chow</div>
+    </div>  
+  </div>
+  <table id="myTable">
+    <thead>
         <tr>
-            <th>Item</th>
-            <th>Category</th>
-            <th>Breed Size</th>
-            <th>Life Stage</th>
-            <th>Ratings</th>
+        <!--When a header is clicked, run the sortTable function, with a parameter, 0 for sorting by names, 1 for sorting by country:-->  
+            <th onclick="sortTable(0)">Item</th>
+            <th onclick="sortTable(1)">Category</th>
+            <th onclick="sortTable(2)">Breed Size</th>
+            <th onclick="sortTable(3)">Life Stage</th>
+            <th onclick="sortTable(4)">Ratings</th>
         </tr>
+    </thead>
+    <tbody>
         <tr>
             <td>Pedigree Complete Nutrition Grilled Steak & Vegetable Flavor Kibble</td>
             <td>Dry Food</td>
@@ -109,11 +128,11 @@
             <td>4.4 Stars</td>
         </tr>
         <tr>
-           <td>Purina One Natural Smartblend Chicken and Rice Formula</td> 
-           <td>Dry Food</td>
-           <td>All Breeds</td>
-           <td>Adult</td>
-           <td>4.6 Stars</td>
+            <td>Purina One Natural Smartblend Chicken and Rice Formula</td> 
+            <td>Dry Food</td>
+            <td>All Breeds</td>
+            <td>Adult</td>
+            <td>4.6 Stars</td>
         </tr>
         <tr>
             <td>Blue Buffalo Life Protection Formula Chicken and Brown Rice</td>
@@ -164,7 +183,108 @@
             <td>Adult</td>
             <td>4.6 Stars</td>
         </tr>
-    </table>  
-    </div>
-  </body>
+    </tbody>    
+  </table>
+  <div class="food">
+    <div class="footer-frame">
+      <img class="icon-instagram" alt="" src="./assets/images/-icon-instagram.svg" />
+
+      <div class="info-frame">
+        <div class="info">Info</div>
+      </div>
+      <div class="support-frame">
+        <div class="support">Support</div>
+      </div>
+      <div class="marketing-frame">
+        <div class="marketing">Marketing</div>
+      </div>
+      <div class="term-of-use-frame">
+        <div class="terms-of-use">Terms Of Use</div>
+      </div>
+      <div class="privacy-frame">
+        <div class="privacy-policy">Privacy Policy</div>
+      </div>
+      <div class="email-frame">
+        <div class="enter-your-email">Enter your email...</div>
+      </div>
+      <div class="subscribe-frame">
+        <div class="subscribe">Subscribe</div>
+      </div>
+      <div class="news-frame">
+        <div class="get-the-latest">Get The Latest Dog News!</div>
+      </div>
+      <img class="logo-icon" alt="" src="./assets/images/logo.svg" />
+
+      <div class="puphub-frame">
+        <div class="puphub">PupHub</div>
+      </div>
+      <div class="contact-us-frame">
+        <div class="contact-us">Contact Us</div>
+      </div>
+      <div class="faq-frame">
+        <div class="faq">FAQ</div>
+      </div>
+      <div class="accessibility-frame">
+        <div class="accessibility">Accessibility</div>
+      </div>
+  </div>
+
+<script>
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc"; 
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;      
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+
+</body>
 </html>

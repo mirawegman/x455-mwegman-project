@@ -28,16 +28,20 @@
 
       <div class="row">
         <div class="column">
-            <img src="./assets/images/bear-01.png" onclick="openLightbox();toSlide(1)" class="hover-shadow preview" style="width: 300px;" />
+            <img src="./assets/images/bear-01.png" onclick="openLightbox();toSlide(1)" 
+            class="hover-shadow preview" style="width: 300px;" />
         </div>
         <div class="column">
-            <img src="./assets/images/ball-01.png" onclick="openLightbox();toSlide(2)" class="hover-shadow preview" style="width: 300px;" />
+            <img src="./assets/images/ball-01.png" onclick="openLightbox();toSlide(2)" 
+            class="hover-shadow preview" style="width: 300px;" />
         </div>
         <div class="column">
-            <img src="./assets/images/dragon-01.png" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" style="width: 300px;" />
+            <img src="./assets/images/dragon-01.png" onclick="openLightbox();toSlide(3)" 
+            class="hover-shadow preview" style="width: 300px;" />
         </div>
         <div class="column">
-            <img src="./assets/images/kong-01.png" onclick="openLightbox();toSlide(4)" class="hover-shadow preview" style="width: 300px;" />
+            <img src="./assets/images/kong-01.png" onclick="openLightbox();toSlide(4)" 
+            class="hover-shadow preview" style="width: 300px;" />
         </div>     
 </div>
 
@@ -119,48 +123,61 @@
           <div class="accessibility">Accessibility</div>
         </div>
       </div>
-      <div class="greenies-frame">
-        <img
-          class="screen-shot-2023-07-11-at-125"
-          alt=""
-          src="./assets/images/screen-shot-20230711-at-125-1@2x.png"
-        />
+      <div class="row2">
+        <div class="column2">
+          <img src="./assets/images/greenies-01.png" onclick="openLightbox2();toSlide(5)"
+          class="hover-shadow preview" style="width: 300px;" />
+        </div>
+        <div class="column2">
+          <img src="./assets/images/ice-cream-01.png" onclick="openLightbox2();toSlide(6)"
+          class="hover-shadow preview" style="width: 300px;" />
+        </div>
+        <div class="column2">
+          <img src="./assets/images/milk-bones-01.png" onclick="openLightbox2();toSlide(7)"
+          class="hover-shadow preview" style="width: 300px;" />
+        </div>
+        <div class="column2">
+          <img src="./assets/images/smores-01.png" onclick="openLightbox2();toSlide(8)"
+          class="hover-shadow preview" style="width: 300px;" />
+        </div>
       </div>
-      <div class="treat-2-frame">
-        <img
-          class="screen-shot-2023-07-11-at-126"
-          alt=""
-          src="./assets/images/screen-shot-20230711-at-126-1@2x.png"
-        />
-      </div>
-      <div class="treat-3-frames">
-        <img
-          class="screen-shot-2023-07-11-at-130"
-          alt=""
-          src="./assets/images/screen-shot-20230711-at-130-1@2x.png"
-        />
-      </div>
-      <div class="treat-4frame">
-        <img
-          class="screen-shot-2023-07-11-at-132"
-          alt=""
-          src="./assets/images/screen-shot-20230711-at-132-1@2x.png"
-        />
-      </div>
-      <div class="treat-5-frame">
-        <img
-          class="screen-shot-2023-07-11-at-135"
-          alt=""
-          src="./assets/images/screen-shot-20230711-at-135-1@2x.png"
-        />
-      </div>
-      <div class="treat-6-frame">
-        <img
-          class="screen-shot-2023-07-11-at-137"
-          alt=""
-          src="./assets/images/screen-shot-20230711-at-137-1@2x.png"
-        />
-      </div> 
+      
+      <div id="Lightbox2" class="modal">
+        <span class="close pointer" onclick="closeLightbox2()">&times;</span>
+        <div class="modal-content">
+          <div class="slide">
+            <img src="./assets/images/greenies-01.png" class="image-slide" />
+          </div>
+          <div class="slide">
+            <img src="./assets/images/ice-cream-01.png" class="image-slide" />
+          </div>
+          <div class="slide">
+            <img src="./assets/images/milk-bones-01.png" class="image-slide" />
+          </div>
+          <div class="slide">
+            <img src="./assets/images/smores-01.png" class="image-slide" />
+          </div>
+
+          <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+          <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+          <div class="dots">
+            <div class="column2">
+              <img src="./assets/images/greenies-01.png" class="modal-preview hover-shadow" onclick="toSlide(5)" />
+            </div>
+            <div class="column2">
+              <img src="./assets/images/ice-cream-01.png" class="modal-preview hover-shadow" onclick="toSlide(6)" />
+            </div>
+            <div class="column2">
+              <img src="./assets/images/milk-bones-01.png" class="modal-preview hover-shadow" onclick="toSlide(7)" />
+            </div>
+            <div class="column2">
+              <img src="./assets/images/smores-01.png" class="modal-preview hover-shadow" onclick="toSlide(8)" />
+            </div>
+          </div>
+        </div>
+      </div>    
+
       <div class="nav-bar">
         <div class="logo-icon1">
           <a href="splash.html"><img src="./assets/images/logo1.svg" style="width: 146px; height: 136px;"></a>
@@ -205,6 +222,12 @@
       }
       function closeLightbox() {
           document.getElementById('Lightbox').style.display = 'none';
+      };
+      function openLightbox2() {
+          document.getElementById('Lightbox2').style.display = 'block';
+      }
+      function closeLightbox2() {
+          document.getElementById('Lightbox2').style.display = 'none';
       };
       function changeSlide(n) {
           showSlide(slideIndex += n);

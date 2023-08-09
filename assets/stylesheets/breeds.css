@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+  color: black;
+}
 .icon-instagram {
   position: absolute;
   height: 19.98%;
@@ -261,7 +265,7 @@
 /* Caption text */
 .text {
     color: black;
-    background-color: rgba(255, 255, 255, 0.407);
+    background-color: rgba(255, 255, 255, 0.556);
     font-size: 25px;
     height: 7.4em; overflow: scroll;
     padding: 8px 12px;

@@ -181,14 +181,13 @@ a {
 .accessibility-frame,
 .footer-frame {
   position: absolute;
-  top: 194px;
+  bottom: 0;
   left: 64px;
   width: 165px;
   height: 47px;
   overflow: hidden;
 }
 .footer-frame {
-  top: 1820px;
   left: 0;
   background-color: #dad2cd;
   width: 1441px;
@@ -316,12 +315,6 @@ a {
   overflow: hidden;
   font-size: 64px;
 }
-table, th, td {
-  border: 2px solid;
-  text-align: center;
-  padding: 15px;
-  color: black;
-}
 table {
   position: absolute;
   top: 700px;
@@ -330,13 +323,10 @@ table {
   align-self: center;
   border-collapse: collapse;
 }
-th {
-  background-color: #dad2cd;
-}
 .food {
   position: relative;
   width: 100%;
-  height: 2100px;
+  height: 750px;
   overflow: hidden;
   text-align: left;
   font-size: var(--font-size-5xl);
