@@ -1,515 +1,543 @@
-a {
-  text-decoration: none;
-  color: black;
-}
-.logo-icon {
-  width: 146px;
-  height: 136px;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.dog-blog {
-  list-style: none;
-  position: absolute;
-  top: 12px;
-  left: 32px;
-}
-.dog-blog-frame {
-  position: relative;
-  background-color: var(--color-linen);
-  width: 169px;
-  height: 53px;
-  overflow: hidden;
-  flex-shrink: 0;
-  cursor: pointer;
-}
-.breeds {
-  list-style: none;
-  position: absolute;
-  top: 12px;
-  left: 44px;
-}
-.breeds-frame {
-  position: relative;
-  background-color: var(--color-linen);
-  width: 168px;
-  height: 53px;
-  overflow: hidden;
-  flex-shrink: 0;
-  cursor: pointer;
-}
-.food,
-.health,
-.shop {
-  list-style: none;
-  position: absolute;
-  top: 12px;
-  left: 55px;
-}
-.health,
-.shop {
-  left: 45px;
-}
-.shop {
-  left: 54px;
-}
-.shop-frame {
-  position: relative;
-  background-color: var(--color-linen);
-  width: 169px;
-  height: 52px;
-  overflow: hidden;
-  flex-shrink: 0;
-  cursor: pointer;
-}
-.search-bar-white {
-  position: absolute;
-  top: 0;
-  left: 25px;
-  border-radius: 24px;
-  background-color: var(--color-white);
-  width: 293px;
-  height: 48px;
-}
-.search {
-  position: absolute;
-  top: 10px;
-  left: 57px;
-}
-.search-rectangle {
-  position: relative;
-  width: 343px;
-  height: 52px;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.icon-instagram,
-.nav-bar {
-  position: absolute;
-  overflow: hidden;
-}
-.nav-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--color-linen);
-  width: 1440px;
-  display: flex;
-  flex-direction: row;
-  padding: 12px 18px;
-  box-sizing: border-box;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 11px;
-}
-.dog-blog-image {
-  position: relative;
-  width: 1440px;
-  height: 352px;
-  object-fit: cover;
-  z-index: 0;
-}
-.dog-blog-iage-frame,
-.dog-blog-text-frame {
-  position: absolute;
-  overflow: hidden;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.dog-blog-text-frame {
-  margin: 0 !important;
-  top: 130px;
-  left: 28px;
-  flex-direction: row;
-  padding: 9px 38px;
-  z-index: 1;
-}
-.dog-blog-iage-frame {
-  top: 214px;
-  left: 0;
-  width: 1440px;
-  flex-direction: column;
-  gap: var(--gap-3xs);
-  font-size: var(--font-size-45xl);
-  color: var(--color-white);
-}
-.articles,
-.articles-frame {
-  position: absolute;
-  top: 25px;
-  left: 28px;
-}
-.articles-frame {
-  top: 621px;
-  left: 36px;
-  background-color: #c7b0a6;
-  width: 666px;
-  height: 107px;
-  overflow: hidden;
-  font-size: var(--font-size-29xl);
-}
-.dog-banner-1 {
-  position: relative;
-  width: 885px;
-  height: 294px;
-  object-fit: cover;
-  z-index: 0;
-}
-.bringing-home {
-  margin: 0;
-}
-.new-puppy-text-container {
-  position: absolute;
-  top: 72px;
-  left: 39px;
-}
-.new-puppy-text-frame {
-  position: absolute;
-  margin: 0 !important;
-  top: 0;
-  left: 0;
-  width: 543px;
-  height: 294px;
-  overflow: hidden;
-  flex-shrink: 0;
-  z-index: 1;
-}
-.new-puppy-frame {
-  position: absolute;
-  top: 751px;
-  left: 36px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-3xs);
-  text-align: center;
-  font-size: var(--font-size-45xl);
-}
-.driving-1-icon {
-  position: relative;
-  width: 885px;
-  height: 293px;
-  object-fit: cover;
-  z-index: 0;
-}
-.dog-car-safety-container {
-  position: absolute;
-  top: 30px;
-  left: 72px;
-}
-.dog-car-safety-text-frame {
-  position: absolute;
-  margin: 0 !important;
-  top: 43px;
-  left: 0;
-  width: 526px;
-  height: 177px;
-  overflow: hidden;
-  flex-shrink: 0;
-  z-index: 1;
-}
-.dog-car-safey-frame {
-  position: absolute;
-  top: 3103px;
-  left: 36px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-3xs);
-  text-align: center;
-  font-size: var(--font-size-45xl);
-}
-.bringing-home-a-new-puppy-is-a {
-  margin: 0;
-  font-size: var(--font-size-13xl);
-}
-.before-bringing-home-a-new-pup {
-  margin: 0;
-  font-size: var(--font-size-17xl);
-}
-.article-1-text-container {
-  position: relative;
-  display: inline-block;
-  width: 999px;
-}
-.article-1-body-frame {
-  position: absolute;
-  top: 1120px;
-  left: 36px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.a-blanket-or-his-dog-bed {
-  margin-bottom: 0;
-}
-.medications-your-dog-may-need {
-  margin: 0;
-  padding-left: 32px;
-}
-.article-2-frame {
-  position: absolute;
-  top: 3469px;
-  left: 36px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.contents {
-  position: relative;
-}
-.contents-frame {
-  background-color: var(--color-lightgray);
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  padding: 25px 57px;
-  align-items: center;
-  justify-content: center;
-  text-align: left;
-  font-size: var(--font-size-29xl);
-}
-.bringing-home-a-container {
-  position: relative;
-  cursor: pointer;
-}
-.dog-car-safety-contents-frame,
-.new-puppy-contents-frame {
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.new-puppy-contents-frame {
-  padding: var(--padding-xs) 10px;
-}
-.dog-car-safety-contents-frame {
-  padding: 0 29px;
-  cursor: pointer;
-}
-.contents-frame-1 {
-  position: absolute;
-  top: 593px;
-  left: 1027px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  padding: 23px 27px;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 7px;
-  text-align: center;
-}
-.dog-blog-page {
-  position: relative;
-  background-color: var(--color-white);
-  width: 100%;
-  height: 5477px;
-  overflow: hidden;
-  text-align: left;
-  font-size: var(--font-size-5xl);
-  color: var(--color-black);
-  font-family: var(--font-roboto-serif);
-}
-.icon-instagram {
-  position: absolute;
-  height: 19.98%;
-  width: 17.56%;
-  top: 63.93%;
-  right: 7.5%;
-  bottom: 16.09%;
-  left: 74.95%;
-  max-width: 100%;
-  max-height: 100%;
-}
-.info,
-.info-frame {
-  position: absolute;
-  top: 6px;
-  left: 23px;
-}
-.info-frame {
-  top: 179px;
-  left: 531px;
-  width: 95px;
-  height: 39px;
-  overflow: hidden;
-}
-.support,
-.support-frame {
-  position: absolute;
-  top: 0;
-  left: 10px;
-}
-.support-frame {
-  top: 186px;
-  left: 616px;
-  width: 116px;
-  height: 26px;
-  overflow: hidden;
-}
-.marketing,
-.marketing-frame {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.marketing-frame {
-  top: 187px;
-  left: 740px;
-  width: 123px;
-  height: 31px;
-  overflow: hidden;
-}
-.terms-of-use {
-  position: absolute;
-  top: 5px;
-  left: 33px;
-}
-.term-of-use-frame {
-  position: absolute;
-  top: 226px;
-  left: 505px;
-  width: 196px;
-  height: 38px;
-  overflow: hidden;
-}
-.privacy-frame,
-.privacy-policy {
-  position: absolute;
-  top: 1px;
-  left: 8px;
-}
-.privacy-frame {
-  top: 230px;
-  left: 701px;
-  width: 183px;
-  height: 30px;
-  overflow: hidden;
-}
-.email-frame,
-.enter-your-email {
-  position: absolute;
-  top: 12px;
-  left: 8px;
-}
-.email-frame {
-  top: 87px;
-  left: 980px;
-  background-color: transparent;
-  border: 2px solid var(--color-white);
-  box-sizing: border-box;
-  width: 277px;
-  height: 51px;
-  overflow: hidden;
-}
-.subscribe,
-.subscribe-frame {
-  position: absolute;
-  top: 12px;
-  left: 17px;
-}
-.subscribe-frame {
-  top: 87px;
-  left: 1255px;
-  border: 2px solid var(--color-white);
-  box-sizing: border-box;
-  width: 150px;
-  height: 51px;
-  overflow: hidden;
-}
-.get-the-latest {
-  position: absolute;
-  top: 30px;
-  left: 38px;
-}
-.logo-icon1,
-.news-frame {
-  position: absolute;
-  overflow: hidden;
-}
-.news-frame {
-  top: 7px;
-  left: 962px;
-  width: 433px;
-  height: 67px;
-  font-size: 32px;
-}
-.logo-icon1 {
-  top: 21px;
-  left: 12px;
-  width: 110px;
-  height: 103px;
-}
-.puphub,
-.puphub-frame {
-  position: absolute;
-  top: 8px;
-  left: 0px;
-}
-.puphub-frame {
-  top: 45px;
-  left: 120px;
-  width: 214px;
-  height: 55px;
-  overflow: hidden;
-  font-size: 40px;
-}
-.contact-us {
-  position: absolute;
-  top: 3px;
-  left: 10px;
-}
-.contact-us-frame {
-  position: absolute;
-  top: 124px;
-  left: 51px;
-  width: 149px;
-  height: 33px;
-  overflow: hidden;
-}
-.faq,
-.faq-frame {
-  position: absolute;
-  top: 5px;
-  left: 15px;
-}
-.faq-frame {
-  top: 157px;
-  left: 49px;
-  width: 89px;
-  height: 33px;
-  overflow: hidden;
-}
-.accessibility {
-  position: absolute;
-  top: 2px;
-  left: 0;
-}
-.accessibility-frame,
-.footer-frame {
-  position: absolute;
-  top: 194px;
-  left: 64px;
-  width: 165px;
-  height: 47px;
-  overflow: hidden;
-}
-.footer-frame {
-  top: 5200px;
-  left: -1px;
-  background-color: #dad2cd;
-  width: 1441px;
-  height: 280px;
-  color: var(--color-white);
-}
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  body {
+    margin: 0;
+    line-height: normal;
+  }
+  :root {
+    /* fonts */
+    --font-roboto-serif: "Roboto Serif";
+  
+    /* font sizes */
+    --font-size-5xl: 24px;
+    --font-size-29xl: 48px;
+    --font-size-13xl: 32px;
+    --font-size-17xl: 36px;
+    --font-size-45xl: 64px;
+  
+    /* Colors */
+    --color-white: #fff;
+    --color-linen: #ece6dd;
+    --color-black: #000;
+    --color-lightgray: #dad2cd;
+  
+    /* Gaps */
+    --gap-3xs: 10px;
+  
+    /* Paddings */
+    --padding-xs: 12px;
+  }
+  .logo-icon {
+    width: 146px;
+    height: 136px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .dog-blog {
+    list-style: none;
+    position: absolute;
+    top: 12px;
+    left: 32px;
+  }
+  .dog-blog-frame {
+    position: relative;
+    background-color: var(--color-linen);
+    width: 169px;
+    height: 53px;
+    overflow: hidden;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+  .breeds {
+    list-style: none;
+    position: absolute;
+    top: 12px;
+    left: 44px;
+  }
+  .breeds-frame {
+    position: relative;
+    background-color: var(--color-linen);
+    width: 168px;
+    height: 53px;
+    overflow: hidden;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+  .food,
+  .health,
+  .shop {
+    list-style: none;
+    position: absolute;
+    top: 12px;
+    left: 55px;
+  }
+  .health,
+  .shop {
+    left: 45px;
+  }
+  .shop {
+    left: 54px;
+  }
+  .shop-frame {
+    position: relative;
+    background-color: var(--color-linen);
+    width: 169px;
+    height: 52px;
+    overflow: hidden;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+  .search-bar-white {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    border-radius: 24px;
+    background-color: var(--color-white);
+    width: 293px;
+    height: 48px;
+  }
+  .search {
+    position: absolute;
+    top: 10px;
+    left: 57px;
+  }
+  .search-rectangle {
+    position: relative;
+    width: 343px;
+    height: 52px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .icon-instagram,
+  .nav-bar {
+    position: absolute;
+    overflow: hidden;
+  }
+  .nav-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-linen);
+    width: 1440px;
+    display: flex;
+    flex-direction: row;
+    padding: 12px 18px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 11px;
+  }
+  .dog-blog-image {
+    position: relative;
+    width: 1440px;
+    height: 352px;
+    object-fit: cover;
+    z-index: 0;
+  }
+  .dog-blog-iage-frame,
+  .dog-blog-text-frame {
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .dog-blog-text-frame {
+    margin: 0 !important;
+    top: 130px;
+    left: 28px;
+    flex-direction: row;
+    padding: 9px 38px;
+    z-index: 1;
+  }
+  .dog-blog-iage-frame {
+    top: 214px;
+    left: 0;
+    width: 1440px;
+    flex-direction: column;
+    gap: var(--gap-3xs);
+    font-size: var(--font-size-45xl);
+    color: var(--color-white);
+  }
+  .articles,
+  .articles-frame {
+    position: absolute;
+    top: 25px;
+    left: 28px;
+  }
+  .articles-frame {
+    top: 621px;
+    left: 36px;
+    background-color: #c7b0a6;
+    width: 666px;
+    height: 107px;
+    overflow: hidden;
+    font-size: var(--font-size-29xl);
+  }
+  .dog-banner-1 {
+    position: relative;
+    width: 885px;
+    height: 294px;
+    object-fit: cover;
+    z-index: 0;
+  }
+  .bringing-home {
+    margin: 0;
+  }
+  .new-puppy-text-container {
+    position: absolute;
+    top: 72px;
+    left: 39px;
+  }
+  .new-puppy-text-frame {
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    left: 0;
+    width: 543px;
+    height: 294px;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .new-puppy-frame {
+    position: absolute;
+    top: 751px;
+    left: 36px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-3xs);
+    text-align: center;
+    font-size: var(--font-size-45xl);
+  }
+  .driving-1-icon {
+    position: relative;
+    width: 885px;
+    height: 293px;
+    object-fit: cover;
+    z-index: 0;
+  }
+  .dog-car-safety-container {
+    position: absolute;
+    top: 30px;
+    left: 72px;
+  }
+  .dog-car-safety-text-frame {
+    position: absolute;
+    margin: 0 !important;
+    top: 43px;
+    left: 0;
+    width: 526px;
+    height: 177px;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .dog-car-safey-frame {
+    position: absolute;
+    top: 3103px;
+    left: 36px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-3xs);
+    text-align: center;
+    font-size: var(--font-size-45xl);
+  }
+  .bringing-home-a-new-puppy-is-a {
+    margin: 0;
+    font-size: var(--font-size-13xl);
+  }
+  .before-bringing-home-a-new-pup {
+    margin: 0;
+    font-size: var(--font-size-17xl);
+  }
+  .article-1-text-container {
+    position: relative;
+    display: inline-block;
+    width: 999px;
+  }
+  .article-1-body-frame {
+    position: absolute;
+    top: 1120px;
+    left: 36px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .a-blanket-or-his-dog-bed {
+    margin-bottom: 0;
+  }
+  .medications-your-dog-may-need {
+    margin: 0;
+    padding-left: 32px;
+  }
+  .article-2-frame {
+    position: absolute;
+    top: 3469px;
+    left: 36px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contents {
+    position: relative;
+  }
+  .contents-frame {
+    background-color: var(--color-lightgray);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    padding: 25px 57px;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font-size: var(--font-size-29xl);
+  }
+  .bringing-home-a-container {
+    position: relative;
+    cursor: pointer;
+  }
+  .dog-car-safety-contents-frame,
+  .new-puppy-contents-frame {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .new-puppy-contents-frame {
+    padding: var(--padding-xs) 10px;
+  }
+  .dog-car-safety-contents-frame {
+    padding: 0 29px;
+    cursor: pointer;
+  }
+  .contents-frame-1 {
+    position: absolute;
+    top: 593px;
+    left: 1027px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 23px 27px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 7px;
+    text-align: center;
+  }
+  .dog-blog-page {
+    position: relative;
+    background-color: var(--color-white);
+    width: 100%;
+    height: 5477px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-5xl);
+    color: var(--color-black);
+    font-family: var(--font-roboto-serif);
+  }
+  .icon-instagram {
+    position: absolute;
+    height: 19.98%;
+    width: 17.56%;
+    top: 63.93%;
+    right: 7.5%;
+    bottom: 16.09%;
+    left: 74.95%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .info,
+  .info-frame {
+    position: absolute;
+    top: 6px;
+    left: 23px;
+  }
+  .info-frame {
+    top: 179px;
+    left: 531px;
+    width: 95px;
+    height: 39px;
+    overflow: hidden;
+  }
+  .support,
+  .support-frame {
+    position: absolute;
+    top: 0;
+    left: 10px;
+  }
+  .support-frame {
+    top: 186px;
+    left: 616px;
+    width: 116px;
+    height: 26px;
+    overflow: hidden;
+  }
+  .marketing,
+  .marketing-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .marketing-frame {
+    top: 187px;
+    left: 740px;
+    width: 123px;
+    height: 31px;
+    overflow: hidden;
+  }
+  .terms-of-use {
+    position: absolute;
+    top: 5px;
+    left: 33px;
+  }
+  .term-of-use-frame {
+    position: absolute;
+    top: 226px;
+    left: 505px;
+    width: 196px;
+    height: 38px;
+    overflow: hidden;
+  }
+  .privacy-frame,
+  .privacy-policy {
+    position: absolute;
+    top: 1px;
+    left: 8px;
+  }
+  .privacy-frame {
+    top: 230px;
+    left: 701px;
+    width: 183px;
+    height: 30px;
+    overflow: hidden;
+  }
+  .email-frame,
+  .enter-your-email {
+    position: absolute;
+    top: 12px;
+    left: 8px;
+  }
+  .email-frame {
+    top: 87px;
+    left: 980px;
+    background-color: transparent;
+    border: 2px solid var(--color-white);
+    box-sizing: border-box;
+    width: 277px;
+    height: 51px;
+    overflow: hidden;
+  }
+  .subscribe,
+  .subscribe-frame {
+    position: absolute;
+    top: 12px;
+    left: 17px;
+  }
+  .subscribe-frame {
+    top: 87px;
+    left: 1255px;
+    border: 2px solid var(--color-white);
+    box-sizing: border-box;
+    width: 150px;
+    height: 51px;
+    overflow: hidden;
+  }
+  .get-the-latest {
+    position: absolute;
+    top: 30px;
+    left: 38px;
+  }
+  .logo-icon1,
+  .news-frame {
+    position: absolute;
+    overflow: hidden;
+  }
+  .news-frame {
+    top: 7px;
+    left: 962px;
+    width: 433px;
+    height: 67px;
+    font-size: 32px;
+  }
+  .logo-icon1 {
+    top: 21px;
+    left: 12px;
+    width: 110px;
+    height: 103px;
+  }
+  .puphub,
+  .puphub-frame {
+    position: absolute;
+    top: 8px;
+    left: 0px;
+  }
+  .puphub-frame {
+    top: 45px;
+    left: 120px;
+    width: 214px;
+    height: 55px;
+    overflow: hidden;
+    font-size: 40px;
+  }
+  .contact-us {
+    position: absolute;
+    top: 3px;
+    left: 10px;
+  }
+  .contact-us-frame {
+    position: absolute;
+    top: 124px;
+    left: 51px;
+    width: 149px;
+    height: 33px;
+    overflow: hidden;
+  }
+  .faq,
+  .faq-frame {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+  }
+  .faq-frame {
+    top: 157px;
+    left: 49px;
+    width: 89px;
+    height: 33px;
+    overflow: hidden;
+  }
+  .accessibility {
+    position: absolute;
+    top: 2px;
+    left: 0;
+  }
+  .accessibility-frame,
+  .footer-frame {
+    position: absolute;
+    top: 194px;
+    left: 64px;
+    width: 165px;
+    height: 47px;
+    overflow: hidden;
+  }
+  .footer-frame {
+    top: 5200px;
+    left: -1px;
+    background-color: #dad2cd;
+    width: 1441px;
+    height: 280px;
+    color: var(--color-white);
+  }
+  

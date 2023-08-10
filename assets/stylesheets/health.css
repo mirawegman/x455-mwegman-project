@@ -2,6 +2,31 @@ a {
   text-decoration: none;
   color: black;
 }
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-roboto-serif: "Roboto Serif";
+  --font-inherit: inherit;
+
+  /* font sizes */
+  --font-size-5xl: 24px;
+  --font-size-29xl: 48px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-linen: #ece6dd;
+  --color-black: #000;
+  --color-lightgray: #dad2cd;
+  --color-silver: #c7b0a6;
+
+  /* Paddings */
+  --padding-lg: 18px;
+  --padding-mid: 17px;
+}
 .icon-instagram {
   position: absolute;
   height: 19.98%;
